@@ -9,12 +9,35 @@ body {
   padding: 20px 20px 20px 20px;
 }
 
+nav {
+   border: 1px solid black;
+   padding: 12px;
+   /*background-color: #F7F6F6;*/
+   background-color: #F1F0F0;
+}
+
+nav a:hover{
+  background-color: black;
+  color: white;
+}
+
 nav a{
   padding: 0.50em;
+  font-family: fantasy;
+  font-size: 24px;
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  width: 195px;
 }
 
 h1{
   margin-top: 0px;
+  font-family: sans-serif;
+}
+
+h2{
+  padding-top: 10px;
 }
 
 header h1 img{
@@ -22,19 +45,47 @@ header h1 img{
   z-index: 0px;
 }
 
+section {
+  background-color: rgba(221, 219, 219, 50);
+}
+
 p, dt {
     font-weight: bold;
     font-size: 20px;
+    font-family: sans-serif;
 }
 
-dl,
-dd {
+dl, dd {
     font-size: 25px;
+    
 }
 
 dd {
     margin-bottom: 1em;
     padding: 20px 20px 20px 20px;
+    font-family: sans-serif;
+}
+
+img {
+  padding-right: 20px;
+  padding-top: 20px;`
 }
 
 
+@media only screen and (max-width: 768px) {
+  nav {
+    background-color: gray;
+  }
+
+  nav a {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  main img {
+    width: 100%;
+    height: auto;
+  }
+}
